@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ubicación - TP Nº1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Ubicación</h2>
+
+    <label for="nombre">Nombre Ubicación</label>
+    <input type="text" id="nombre" placeholder="Nombre Ubicación">
+
+    <!-- Nuevo botón para usar la API de Geolocalización -->
+    <button onclick="obtenerUbicacionActual()" class="btn-geo"> Obtener mi ubicación</button>
+    <br><br> <!-- Estos saltos empujarán "Latitud" hacia abajo -->
+    <label for="lat">Latitud</label>
+    <input type="text" id="lat" placeholder="Ej: 28.3537921">
+
+    <label for="lng">Longitud</label>
+    <input type="text" id="lng" placeholder="Ej: -81.5618197">
+
+    <button onclick="abrirUbicacion()">Abrir Ubicación</button>
+
+    <div id="map"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
